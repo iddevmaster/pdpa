@@ -138,7 +138,7 @@ $datas['line_token'] = $getfom->linenoti;
 
 
 
-$linealert = UserSystemInfoHelper::Lineconfirm($datas);
+$linealert = UserSystemInfoHelper::Teleconfirm($datas);
 
 
 
