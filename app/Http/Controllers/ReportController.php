@@ -134,7 +134,7 @@ class ReportController extends Controller
         }
 
 
-       $report = $data->get();
+       $report = $data->whereYear('created_at', Carbon::now()->year)->get();
 
         foreach ($report as $key => $sky) {
             $branch = Branch::where('id',$sky->branch_id)->first();

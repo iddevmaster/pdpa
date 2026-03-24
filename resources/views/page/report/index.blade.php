@@ -48,7 +48,7 @@
                                 <label class="col-md-1 control-label" for="name">สาขา</label>
                                 <div class="col-md-3">
                                     <select class="form-control" name="branch_id" id="branch_id">
-                                        <option value="">ทั้งหมด</option>
+
                                         @foreach($branch as $branchs)
                                             <option value="{{$branchs->id}}">{{$branchs->name}} </option>
                                         @endforeach
